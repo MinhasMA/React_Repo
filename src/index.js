@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDom from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Book_List() 
+{
+    return (
+    <section> 
+        This is a Book List from Amazon.
+            <h1>first div </h1>
+            <h1> 
+                bisram vs Teetu 
+            </h1>       
+            <ol>
+                <li>
+                layman of Sri Lanka 
+                </li>
+                <li>
+                langda tyagi, tangdi kabab, butter masala
+                </li>
+                <li>
+                tangdi kabab, butter masala
+                </li>
+                <li>
+                murgh chokhani
+                </li>
+            </ol>
+            <h3>
+                bhosdi wale chacha
+            </h3>
+            
+            <h3> lavde lakhanpal. machaye bawal. </h3> 
+    </section> 
+    ) ;
+}
+ReactDom.render(<Book_List />, document.getElementById('root'));
